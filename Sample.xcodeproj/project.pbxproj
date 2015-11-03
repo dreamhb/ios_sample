@@ -15,6 +15,9 @@
 		45BA94111BE0B5BC002FF676 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45BA940F1BE0B5BC002FF676 /* LaunchScreen.storyboard */; };
 		45BA941C1BE0B5BD002FF676 /* SampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 45BA941B1BE0B5BD002FF676 /* SampleTests.m */; };
 		45BA94271BE0B5BD002FF676 /* SampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 45BA94261BE0B5BD002FF676 /* SampleUITests.m */; };
+		45BA94351BE0D488002FF676 /* ic_add_content.png in Resources */ = {isa = PBXBuildFile; fileRef = 45BA94341BE0D488002FF676 /* ic_add_content.png */; settings = {ASSET_TAGS = (); }; };
+		45BA943B1BE22E05002FF676 /* WebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45BA943A1BE22E05002FF676 /* WebViewViewController.m */; settings = {ASSET_TAGS = (); }; };
+		45BA943E1BE31EF5002FF676 /* TabViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45BA943D1BE31EF5002FF676 /* TabViewViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,11 @@
 		45BA94221BE0B5BD002FF676 /* SampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		45BA94261BE0B5BD002FF676 /* SampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleUITests.m; sourceTree = "<group>"; };
 		45BA94281BE0B5BD002FF676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45BA94341BE0D488002FF676 /* ic_add_content.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_add_content.png; path = ../../../../Downloads/ic_add_content.png; sourceTree = "<group>"; };
+		45BA94391BE22E05002FF676 /* WebViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewViewController.h; sourceTree = "<group>"; };
+		45BA943A1BE22E05002FF676 /* WebViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewViewController.m; sourceTree = "<group>"; };
+		45BA943C1BE31EF5002FF676 /* TabViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabViewViewController.h; sourceTree = "<group>"; };
+		45BA943D1BE31EF5002FF676 /* TabViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabViewViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,15 +109,20 @@
 		45BA94001BE0B5BC002FF676 /* Sample */ = {
 			isa = PBXGroup;
 			children = (
+				45BA94341BE0D488002FF676 /* ic_add_content.png */,
 				45BA94041BE0B5BC002FF676 /* AppDelegate.h */,
 				45BA94051BE0B5BC002FF676 /* AppDelegate.m */,
 				45BA94071BE0B5BC002FF676 /* ViewController.h */,
 				45BA94081BE0B5BC002FF676 /* ViewController.m */,
 				45BA940A1BE0B5BC002FF676 /* Main.storyboard */,
+				45BA943C1BE31EF5002FF676 /* TabViewViewController.h */,
+				45BA943D1BE31EF5002FF676 /* TabViewViewController.m */,
 				45BA940D1BE0B5BC002FF676 /* Assets.xcassets */,
 				45BA940F1BE0B5BC002FF676 /* LaunchScreen.storyboard */,
 				45BA94121BE0B5BC002FF676 /* Info.plist */,
 				45BA94011BE0B5BC002FF676 /* Supporting Files */,
+				45BA94391BE22E05002FF676 /* WebViewViewController.h */,
+				45BA943A1BE22E05002FF676 /* WebViewViewController.m */,
 			);
 			path = Sample;
 			sourceTree = "<group>";
@@ -246,6 +259,7 @@
 				45BA94111BE0B5BC002FF676 /* LaunchScreen.storyboard in Resources */,
 				45BA940E1BE0B5BC002FF676 /* Assets.xcassets in Resources */,
 				45BA940C1BE0B5BC002FF676 /* Main.storyboard in Resources */,
+				45BA94351BE0D488002FF676 /* ic_add_content.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +286,8 @@
 			files = (
 				45BA94091BE0B5BC002FF676 /* ViewController.m in Sources */,
 				45BA94061BE0B5BC002FF676 /* AppDelegate.m in Sources */,
+				45BA943E1BE31EF5002FF676 /* TabViewViewController.m in Sources */,
+				45BA943B1BE22E05002FF676 /* WebViewViewController.m in Sources */,
 				45BA94031BE0B5BC002FF676 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
