@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4541FD2A1BE9A2FC0077555D /* stringFile.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4541FD2C1BE9A2FC0077555D /* stringFile.strings */; };
+		45B5DD751BE9AC3300EC2468 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 45B5DD741BE9AC3300EC2468 /* Info.plist */; settings = {ASSET_TAGS = (); }; };
 		45BA94031BE0B5BC002FF676 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 45BA94021BE0B5BC002FF676 /* main.m */; };
 		45BA94061BE0B5BC002FF676 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45BA94051BE0B5BC002FF676 /* AppDelegate.m */; };
 		45BA94091BE0B5BC002FF676 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45BA94081BE0B5BC002FF676 /* ViewController.m */; };
@@ -16,7 +18,7 @@
 		45BA941C1BE0B5BD002FF676 /* SampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 45BA941B1BE0B5BD002FF676 /* SampleTests.m */; };
 		45BA94271BE0B5BD002FF676 /* SampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 45BA94261BE0B5BD002FF676 /* SampleUITests.m */; };
 		45BA94351BE0D488002FF676 /* ic_add_content.png in Resources */ = {isa = PBXBuildFile; fileRef = 45BA94341BE0D488002FF676 /* ic_add_content.png */; settings = {ASSET_TAGS = (); }; };
-		45BA943B1BE22E05002FF676 /* WebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45BA943A1BE22E05002FF676 /* WebViewViewController.m */; settings = {ASSET_TAGS = (); }; };
+		45BA943B1BE22E05002FF676 /* MultisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45BA943A1BE22E05002FF676 /* MultisViewController.m */; settings = {ASSET_TAGS = (); }; };
 		45BA943E1BE31EF5002FF676 /* TabViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45BA943D1BE31EF5002FF676 /* TabViewViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
@@ -38,6 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		451567241BE9A6F60074D435 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		4541FD281BE9A2560077555D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		4541FD291BE9A2560077555D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		4541FD2B1BE9A2FC0077555D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/stringFile.strings"; sourceTree = "<group>"; };
+		4541FD2D1BE9A3010077555D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/stringFile.strings; sourceTree = "<group>"; };
+		45B5DD741BE9AC3300EC2468 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../../../../Downloads/Info.plist; sourceTree = "<group>"; };
 		45BA93FE1BE0B5BC002FF676 /* Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45BA94021BE0B5BC002FF676 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		45BA94041BE0B5BC002FF676 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -47,7 +55,6 @@
 		45BA940B1BE0B5BC002FF676 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		45BA940D1BE0B5BC002FF676 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45BA94101BE0B5BC002FF676 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		45BA94121BE0B5BC002FF676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45BA94171BE0B5BD002FF676 /* SampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		45BA941B1BE0B5BD002FF676 /* SampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleTests.m; sourceTree = "<group>"; };
 		45BA941D1BE0B5BD002FF676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,8 +62,8 @@
 		45BA94261BE0B5BD002FF676 /* SampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleUITests.m; sourceTree = "<group>"; };
 		45BA94281BE0B5BD002FF676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45BA94341BE0D488002FF676 /* ic_add_content.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_add_content.png; path = ../../../../Downloads/ic_add_content.png; sourceTree = "<group>"; };
-		45BA94391BE22E05002FF676 /* WebViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewViewController.h; sourceTree = "<group>"; };
-		45BA943A1BE22E05002FF676 /* WebViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewViewController.m; sourceTree = "<group>"; };
+		45BA94391BE22E05002FF676 /* MultisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultisViewController.h; sourceTree = "<group>"; };
+		45BA943A1BE22E05002FF676 /* MultisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultisViewController.m; sourceTree = "<group>"; };
 		45BA943C1BE31EF5002FF676 /* TabViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabViewViewController.h; sourceTree = "<group>"; };
 		45BA943D1BE31EF5002FF676 /* TabViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabViewViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,20 +116,21 @@
 		45BA94001BE0B5BC002FF676 /* Sample */ = {
 			isa = PBXGroup;
 			children = (
+				45B5DD741BE9AC3300EC2468 /* Info.plist */,
 				45BA94341BE0D488002FF676 /* ic_add_content.png */,
 				45BA94041BE0B5BC002FF676 /* AppDelegate.h */,
 				45BA94051BE0B5BC002FF676 /* AppDelegate.m */,
 				45BA94071BE0B5BC002FF676 /* ViewController.h */,
 				45BA94081BE0B5BC002FF676 /* ViewController.m */,
 				45BA940A1BE0B5BC002FF676 /* Main.storyboard */,
+				4541FD2C1BE9A2FC0077555D /* stringFile.strings */,
 				45BA943C1BE31EF5002FF676 /* TabViewViewController.h */,
 				45BA943D1BE31EF5002FF676 /* TabViewViewController.m */,
 				45BA940D1BE0B5BC002FF676 /* Assets.xcassets */,
 				45BA940F1BE0B5BC002FF676 /* LaunchScreen.storyboard */,
-				45BA94121BE0B5BC002FF676 /* Info.plist */,
 				45BA94011BE0B5BC002FF676 /* Supporting Files */,
-				45BA94391BE22E05002FF676 /* WebViewViewController.h */,
-				45BA943A1BE22E05002FF676 /* WebViewViewController.m */,
+				45BA94391BE22E05002FF676 /* MultisViewController.h */,
+				45BA943A1BE22E05002FF676 /* MultisViewController.m */,
 			);
 			path = Sample;
 			sourceTree = "<group>";
@@ -257,6 +265,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				45BA94111BE0B5BC002FF676 /* LaunchScreen.storyboard in Resources */,
+				4541FD2A1BE9A2FC0077555D /* stringFile.strings in Resources */,
+				45B5DD751BE9AC3300EC2468 /* Info.plist in Resources */,
 				45BA940E1BE0B5BC002FF676 /* Assets.xcassets in Resources */,
 				45BA940C1BE0B5BC002FF676 /* Main.storyboard in Resources */,
 				45BA94351BE0D488002FF676 /* ic_add_content.png in Resources */,
@@ -287,7 +297,7 @@
 				45BA94091BE0B5BC002FF676 /* ViewController.m in Sources */,
 				45BA94061BE0B5BC002FF676 /* AppDelegate.m in Sources */,
 				45BA943E1BE31EF5002FF676 /* TabViewViewController.m in Sources */,
-				45BA943B1BE22E05002FF676 /* WebViewViewController.m in Sources */,
+				45BA943B1BE22E05002FF676 /* MultisViewController.m in Sources */,
 				45BA94031BE0B5BC002FF676 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,10 +334,21 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		4541FD2C1BE9A2FC0077555D /* stringFile.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4541FD2B1BE9A2FC0077555D /* zh-Hans */,
+				4541FD2D1BE9A3010077555D /* en */,
+			);
+			name = stringFile.strings;
+			sourceTree = "<group>";
+		};
 		45BA940A1BE0B5BC002FF676 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				45BA940B1BE0B5BC002FF676 /* Base */,
+				4541FD281BE9A2560077555D /* zh-Hans */,
+				451567241BE9A6F60074D435 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -336,6 +357,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				45BA94101BE0B5BC002FF676 /* Base */,
+				4541FD291BE9A2560077555D /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -427,7 +449,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Sample/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/../../../Downloads/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = smartac.Sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -438,7 +460,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Sample/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/../../../Downloads/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = smartac.Sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -512,6 +534,7 @@
 				45BA942D1BE0B5BD002FF676 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		45BA942E1BE0B5BD002FF676 /* Build configuration list for PBXNativeTarget "SampleTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +543,7 @@
 				45BA94301BE0B5BD002FF676 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		45BA94311BE0B5BD002FF676 /* Build configuration list for PBXNativeTarget "SampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +552,7 @@
 				45BA94331BE0B5BD002FF676 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

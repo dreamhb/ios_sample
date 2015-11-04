@@ -20,7 +20,7 @@
                                 <rect key="frame" x="35" y="224" width="235" height="63"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3W-ak-fhz">
@@ -56,17 +56,17 @@
                         <outlet property="image" destination="nJD-Pr-cLK" id="W2M-pG-hsR"/>
                         <outlet property="label" destination="yrR-02-JDI" id="XMz-78-dv1"/>
                         <outlet property="urlBtn" destination="0O6-Za-ftM" id="YXE-Qd-TkF"/>
-                        <segue destination="sp9-Pr-mBC" kind="modal" identifier="webviewId" id="jos-RG-cuU"/>
+                        <segue destination="sp9-Pr-mBC" kind="modal" identifier="multiViewId" id="jos-RG-cuU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-356" y="318"/>
         </scene>
-        <!--Web View View Controller-->
+        <!--Multis View Controller-->
         <scene sceneID="ozb-vf-1dY">
             <objects>
-                <viewController id="sp9-Pr-mBC" customClass="WebViewViewController" sceneMemberID="viewController">
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="sp9-Pr-mBC" customClass="MultisViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="z9Z-G3-PFm"/>
                         <viewControllerLayoutGuide type="bottom" id="yII-xA-PBk"/>
@@ -79,7 +79,7 @@
                                 <rect key="frame" x="89" y="34" width="143" height="47"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HG4-Rg-x2S">
@@ -97,17 +97,10 @@
                                     <segment title="First"/>
                                     <segment title="Second"/>
                                 </segments>
+                                <connections>
+                                    <action selector="twoButton:" destination="sp9-Pr-mBC" eventType="valueChanged" id="1Lm-F2-vRJ"/>
+                                </connections>
                             </segmentedControl>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zmq-jO-ael">
-                                <rect key="frame" x="189" y="332" width="97" height="30"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="v4Q-oG-VgF">
-                                <rect key="frame" x="18" y="376" width="118" height="31"/>
-                                <animations/>
-                            </slider>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Aq9-K6-Wq1">
                                 <rect key="frame" x="213" y="375" width="51" height="31"/>
                                 <animations/>
@@ -120,6 +113,22 @@
                                     <segue destination="3ox-q1-k7x" kind="show" id="zG7-1s-GEQ"/>
                                 </connections>
                             </button>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="v4Q-oG-VgF">
+                                <rect key="frame" x="21" y="375" width="118" height="31"/>
+                                <animations/>
+                                <connections>
+                                    <action selector="scrolling:" destination="sp9-Pr-mBC" eventType="valueChanged" id="mew-yX-aaw"/>
+                                </connections>
+                            </slider>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zmq-jO-ael">
+                                <rect key="frame" x="189" y="331" width="97" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldLoose:" destination="sp9-Pr-mBC" eventType="editingDidEnd" id="zCx-RQ-dyd"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -127,8 +136,13 @@
                     <navigationItem key="navigationItem" id="Fw4-7X-bTN"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
+                        <outlet property="Scroller" destination="v4Q-oG-VgF" id="u88-ut-cBq"/>
+                        <outlet property="_switch" destination="Aq9-K6-Wq1" id="s97-Tz-yjE"/>
                         <outlet property="btnNext" destination="HG4-Rg-x2S" id="7LU-27-P8J"/>
                         <outlet property="labelNext" destination="MjM-0R-XFZ" id="BJT-c2-hhY"/>
+                        <outlet property="scroller" destination="v4Q-oG-VgF" id="lmZ-Qp-4CH"/>
+                        <outlet property="textField" destination="Zmq-jO-ael" id="GAK-aN-Jyj"/>
+                        <outlet property="twoButton" destination="gCk-Ym-mHY" id="N3g-5Q-iZa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fid-eT-1s1" userLabel="First Responder" sceneMemberID="firstResponder"/>

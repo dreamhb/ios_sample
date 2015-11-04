@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "WebViewViewController.h"
+#import "MultisViewController.h"
 
 @interface ViewController ()
 
@@ -32,17 +32,17 @@
     [btn setBackgroundColor:[UIColor blueColor]];
     [btn setTitle:@"Maomao" forState:UIControlStateNormal];
     
-    [self.label setText:@" Button clicked !"];
+    [self.label setText: @" Button clicked "];
     //self.image = [UIImage imageNamed:@"AppIcon.png"];
     [self.image setImage:[UIImage imageNamed:@"ic_add_content.png"]];
 }
 - (IBAction)url_click:(id)sender {
-    [self performSegueWithIdentifier:@"webviewId" sender:nil];
+    [self performSegueWithIdentifier:@"multiViewId" sender:nil];
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if([segue.identifier isEqualToString:@"webviewId"]){
-        WebViewViewController* webview = segue.destinationViewController;
+    if([segue.identifier isEqualToString:@"multiViewId"]){
+        MultisViewController* webview = segue.destinationViewController;
         webview.url = @"www.baidu.com";
     }
 }

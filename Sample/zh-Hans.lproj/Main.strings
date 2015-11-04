@@ -1,0 +1,27 @@
+
+/* Class = "UIButton"; normalTitle = "Jump URL"; ObjectID = "0O6-Za-ftM"; */
+"0O6-Za-ftM.normalTitle" = "跳转 URL";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "HG4-Rg-x2S"; */
+"HG4-Rg-x2S.normalTitle" = "按钮";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "MjM-0R-XFZ"; */
+"MjM-0R-XFZ.text" = "标签";
+
+/* Class = "UIButton"; normalTitle = "Click ME"; ObjectID = "V3W-ak-fhz"; */
+"V3W-ak-fhz.normalTitle" = "点我啊";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "e0P-1U-UkD"; */
+"e0P-1U-UkD.normalTitle" = "按钮";
+
+/* Class = "UISegmentedControl"; gCk-Ym-mHY.segmentTitles[0] = "First"; ObjectID = "gCk-Ym-mHY"; */
+"gCk-Ym-mHY.segmentTitles[0]" = "First";
+
+/* Class = "UISegmentedControl"; gCk-Ym-mHY.segmentTitles[1] = "Second"; ObjectID = "gCk-Ym-mHY"; */
+"gCk-Ym-mHY.segmentTitles[1]" = "Second";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "wEe-2h-rFY"; */
+"wEe-2h-rFY.normalTitle" = "按钮";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "yrR-02-JDI"; */
+"yrR-02-JDI.text" = "标签";
